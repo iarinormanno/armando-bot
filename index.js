@@ -11,7 +11,7 @@ const activities_list = [
 ];
 
 
-
+require('dotenv').config();
 const { Collection, Client, Discord } = require('discord.js');
 const fs = require('fs');
 const client = new Client({
@@ -116,5 +116,5 @@ client.on('message', async message =>{
 
 
 
-client.login(token)
+client.login(process.env.token)
 
