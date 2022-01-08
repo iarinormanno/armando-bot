@@ -23,7 +23,7 @@ const token = config.token;
 const mongoose = require('mongoose');
 
 mongoose.connect(
-	'mongodb+srv://bot:7MwIYQxPGCzy3RIC@chillita.0yxvw.mongodb.net/test',
+	'//',
 	{ useNewUrlParser: true, useUnifiedTopology: true }
 );
 mongoose.set('useFindAndModify', false);
@@ -81,7 +81,7 @@ const prefix = config.prefix
 const token = config.token
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://bot:xHlmqu6T42UFD4BX@chillita.0yxvw.mongodb.net/test', { useNewUrlParser: true, useUnifiedTopology: true, })
+mongoose.connect('//', { useNewUrlParser: true, useUnifiedTopology: true, })
 mongoose.set('useFindAndModify', false);
 
 client.commands = new Collection();
